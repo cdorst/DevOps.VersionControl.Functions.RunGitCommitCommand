@@ -1,4 +1,5 @@
-﻿using static DevOps.VersionControl.Functions.RunGitCommand.GitCommandRunner;
+﻿using static Common.Functions.WrapStringInDoubleQuotes.StringWrapper;
+using static DevOps.VersionControl.Functions.RunGitCommand.GitCommandRunner;
 
 namespace DevOps.VersionControl.Functions.RunGitCommitCommand
 {
@@ -11,6 +12,6 @@ namespace DevOps.VersionControl.Functions.RunGitCommitCommand
             => Git(directory,
                 command: commit,
                 MessageFlag,
-                message);
+                WrapInDoubleQuotes(message));
     }
 }

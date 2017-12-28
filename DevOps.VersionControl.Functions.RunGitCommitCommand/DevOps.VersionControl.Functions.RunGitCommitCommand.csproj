@@ -14,6 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CDorst.Common.Functions.WrapStringInDoubleQuotes" Version="1.0.0" />
     <PackageReference Include="CDorst.DevOps.VersionControl.Functions.RunGitCommand" Version="1.0.1" />
   </ItemGroup>
 
